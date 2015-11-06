@@ -1,0 +1,33 @@
+Package: p7zip-full
+Source: p7zip
+Version: 15.09.1~dfsg.1-1
+Architecture: amd64
+Maintainer: Mohammed Adnène Trojette <adn+deb@diwi.org>
+Installed-Size: 5605
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Suggests: p7zip-rar
+Conflicts: p7zip (<< 4.39-1)
+Replaces: p7zip (<< 4.39-1)
+Section: utils
+Priority: optional
+Homepage: http://p7zip.sourceforge.net/
+Description: 7z and 7za file archivers with high compression ratio
+ p7zip is the Unix command-line port of 7-Zip, a file archiver that
+ archives with high compression ratios.
+ .
+ p7zip-full provides utilities to pack and unpack 7z archives within
+ a shell or using a GUI (such as Ark, File Roller or Nautilus).
+ .
+ Installing p7zip-full allows File Roller to use the very efficient 7z
+ compression format for packing and unpacking files and directories.
+ Additionally, it provides the 7z and 7za commands.
+ .
+ List of supported formats:
+   - Packing / unpacking: 7z, ZIP, GZIP, BZIP2, XZ and TAR
+   - Unpacking only: APM, ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT,
+     HFS, ISO, LZH, LZMA, LZMA2, MBR, MSI, MSLZ, NSIS, NTFS, RAR (only
+     if non-free p7zip-rar package is installed), RPM, SquashFS, UDF,
+     VHD, WIM, XAR and Z.
+ .
+ p7zip provides 7zr, a light version of 7za, and p7zip, a gzip-like
+ wrapper around 7zr.
